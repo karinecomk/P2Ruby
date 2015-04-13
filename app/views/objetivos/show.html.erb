@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dias:</strong>
+  <%= @objetivo.dias %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @objetivo.peso %>
+</p>
+
+<%= link_to 'Edit', edit_objetivo_path(@objetivo) %> |
+<%= link_to 'Back', objetivos_path %>

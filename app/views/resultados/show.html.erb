@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @resultado.paciente.nome if @resultado.paciente %>
+</p>
+
+<p>
+  <strong>Pesoinicial:</strong>
+  <%= @resultado.pesoinicial %>
+</p>
+
+<p>
+  <strong>Pesofinal:</strong>
+  <%= @resultado.pesofinal %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @resultado.status %>
+</p>
+
+<p>
+  <strong>Perdas:</strong>
+  <%= @resultado.perdas %>
+</p>
+
+<p>
+  <strong>Ganhos:</strong>
+  <%= @resultado.ganhos %>
+</p>
+
+<%= link_to 'Edit', edit_resultado_path(@resultado) %> |
+<%= link_to 'Back', resultados_path %>

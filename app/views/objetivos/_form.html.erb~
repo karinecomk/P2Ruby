@@ -1,0 +1,12 @@
+<%= simple_form_for(@objetivo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :dias %>
+    <%= f.input :peso %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
